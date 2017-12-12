@@ -1,30 +1,30 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./public/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/about.css">
     <title>联系我们</title>
-    <script src="./js/jquery-3.2.1.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/about.js"></script>
+    <script src="./public/js/jquery-3.2.1.js"></script>
+    <script src="./public/js/bootstrap.js"></script>
+    <script src="./public/js/about.js"></script>
 </head>
 <script>
     $(function() {
         if ($(window).width() <= 768) {
-            $('.logo').attr('src', './img/logo_2.gif');
+            $('.logo').attr('src', './public/img/logo_2.gif');
         } else {
-            $('.logo').attr('src', './img/logo.gif');
+            $('.logo').attr('src', './public/img/logo.gif');
         }
         /*调整窗口自动调整宽度*/
         $(window).resize(function() {
             if ($(window).width() <= 768) {
-                $('.logo').attr('src', './img/logo_2.gif');
+                $('.logo').attr('src', './public/img/logo_2.gif');
             } else {
-                $('.logo').attr('src', './img/logo.gif');
+                $('.logo').attr('src', './public/img/logo.gif');
             }
         });
     });
