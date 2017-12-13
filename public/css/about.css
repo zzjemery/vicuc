@@ -60,9 +60,9 @@ body {
     visibility: visible;
   }
   .nav-su {
-    width: 40% !important;
+    width: 80% !important;
     position: relative;
-    left: -40%;
+    left: -80%;
   }
   .icon_q {
     display: inline-block;
@@ -71,6 +71,10 @@ body {
     border-radius: 50%;
     border: 1px solid red;
     margin-right: 5%;
+  }
+  .contorl {
+    position: relative;
+    left: 0%;
   }
   #s-nav li {
     width: 80%;
