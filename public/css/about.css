@@ -34,6 +34,9 @@ body {
 #nav_ul li {
   width: 129px;
 }
+#s2-nav {
+  display: none;
+}
 .text .show li {
   line-height: 40px;
 }
@@ -42,6 +45,9 @@ body {
 }
 @media screen and (max-width: 768px) {
   .caret {
+    display: none;
+  }
+  .dropdown-menu {
     display: none;
   }
   .icon-show {

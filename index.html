@@ -50,6 +50,16 @@
                 $('.contorl').css('transition', 'all 1s');
             }
 
+        });
+        var count1 = 0;
+        $('#li_core').on('click', function() {
+            count1++;
+            if (count1 % 2 == 1) {
+                $('#s2-nav').css('display', 'block');
+            } else {
+                $('#s2-nav').css('display', 'none');
+            }
+
         })
     });
 </script>
@@ -76,8 +86,12 @@
                 <ul class="nav navbar-nav" id="s-nav" style="background-color:#fff;">
                     <li><a href="#"><span class="icon_q"></span>HOME</a></li>
                     <li id="li_core" class="dropdown" style="position:relative;">
-                        <a href="core.html"><span class="icon_q"></span>CORE<span class="caret"></span><span class=" icon-show">+</span></a>
-
+                        <a href="javascript:;"><span class="icon_q"></span>CORE<span class="caret"></span><span class=" icon-show">+</span></a>
+                        <ul id="s2-nav" class="dropdown-menu2" aria-labelledby="dropdownMen2" style="text-align:center;">
+                            <li style="clear:both;"><a href="#" style="padding:5px;">核心业务</a></li>
+                            <li style="clear:both;"><a href="#" style="padding:5px;">销售渠道</a></li>
+                            <li style="clear:both;"><a href="#" style="padding:5px;">合作伙伴</a></li>
+                        </ul>
                     </li>
                     <li><a href="#"><span class="icon_q"></span>NEWS</a></li>
                     <li><a href="#"><span class="icon_q"></span>CASE</a></li>
@@ -85,6 +99,7 @@
                     <li><a href="#"><span class="icon_q"></span>CONTACT US</a></li>
                 </ul>
             </div>
+
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
