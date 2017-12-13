@@ -65,7 +65,8 @@ body {
   .nav-su {
     width: 60% !important;
     position: relative;
-    left: -60%;
+    left: -61%;
+    margin-top: 0px !important;
   }
   .icon_q {
     display: inline-block;
@@ -94,6 +95,7 @@ body {
   }
   .mobile1 a {
     color: #000;
+    line-height: 40px;
   }
 }
 .s-nav {
