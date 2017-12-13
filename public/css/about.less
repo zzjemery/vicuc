@@ -45,9 +45,45 @@ body{
         width: 129px;
     }
 }
+.text .show li {
 
+    line-height: 40px;
+}
+.icon-show{
+    visibility: hidden;
+}
 
-
+@media screen and (max-width:768px){
+    .caret{
+        display: none;
+    }
+    .icon-show{
+        margin-left: 8%;
+        visibility: visible;
+    }
+    .nav-su{
+        width:40% !important;
+        // display: none;
+        position: relative;
+        left:-40%;
+     }
+     .icon_q{
+         display: inline-block;
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         border: 1px solid red;
+         margin-right: 5%;
+     }
+     #s-nav li{
+        width: 80%;
+        a{
+           text-align: left; 
+           text-indent: 1em;
+        }
+        
+     }
+   }
 //此处为共同样式
 .s-nav{
     background-color: #fff;
