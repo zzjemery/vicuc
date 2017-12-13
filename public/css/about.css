@@ -50,7 +50,7 @@ body {
   .caret {
     display: none;
   }
-  body {
+  .all {
     overflow: hidden;
   }
   .dropdown-menu2 a {
