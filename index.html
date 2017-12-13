@@ -12,57 +12,6 @@
     <script src="./public/js/bootstrap.js"></script>
     <script src="./public/js/about.js"></script>
 </head>
-<script>
-    $(function() {
-        if ($(window).width() <= 768) {
-            $('.logo').attr('src', './public/img/logo_2.gif');
-        } else {
-            $('.logo').attr('src', './public/img/logo.gif');
-        }
-        /*调整窗口自动调整宽度*/
-        $(window).resize(function() {
-            if ($(window).width() <= 768) {
-                $('.logo').attr('src', './public/img/logo_2.gif');
-            } else {
-                $('.logo').attr('src', './public/img/logo.gif');
-            }
-        });
-
-        var count = 0;
-        $('.nav-ss').on('click', function() {
-            //banner_zzj  bannner 的类
-            //.s-nav   导航栏的类
-            var wi = $('.banner_zzj').outerHeight() + $('.s-nav').outerHeight();
-            $('.yidong').css({
-                "margin-top": wi + "px"
-            });
-
-            count++;
-            if (count % 2 == 1) {
-                $('.nav-su').css('left', '0%');
-                $('.contorl').css('margin-left', '40%');
-                $('.nav-su').css('transition', 'all 1s');
-                $('.contorl').css('transition', 'all 1s');
-            } else {
-                $('.nav-su').css('left', '-40%');
-                $('.contorl').css('margin-left', '0%');
-                $('.nav-su').css('transition', 'all 1s');
-                $('.contorl').css('transition', 'all 1s');
-            }
-
-        });
-        var count1 = 0;
-        $('#li_core').on('click', function() {
-            count1++;
-            if (count1 % 2 == 1) {
-                $('#s2-nav').css('display', 'block');
-            } else {
-                $('#s2-nav').css('display', 'none');
-            }
-
-        })
-    });
-</script>
 
 <body>
 
@@ -134,7 +83,58 @@
         </div>
 
     </div>
+    <script>
+        $(function() {
+            if ($(window).width() <= 768) {
+                $('.logo').attr('src', './public/img/logo_2.gif');
+                $('#menu-show').css('display', 'none');
+            } else {
+                $('.logo').attr('src', './public/img/logo.gif');
+            }
+            /*调整窗口自动调整宽度*/
+            $(window).resize(function() {
+                if ($(window).width() <= 768) {
+                    $('.logo').attr('src', './public/img/logo_2.gif');
+                } else {
+                    $('.logo').attr('src', './public/img/logo.gif');
+                }
+            });
 
+            var count = 0;
+            $('.nav-ss').on('click', function() {
+                //banner_zzj  bannner 的类
+                //.s-nav   导航栏的类
+                var wi = $('.banner_zzj').outerHeight() + $('.s-nav').outerHeight();
+                $('.yidong').css({
+                    "margin-top": wi + "px"
+                });
+
+                count++;
+                if (count % 2 == 1) {
+                    $('.nav-su').css('left', '0%');
+                    $('.contorl').css('margin-left', '40%');
+                    $('.nav-su').css('transition', 'all 1s');
+                    $('.contorl').css('transition', 'all 1s');
+                } else {
+                    $('.nav-su').css('left', '-40%');
+                    $('.contorl').css('margin-left', '0%');
+                    $('.nav-su').css('transition', 'all 1s');
+                    $('.contorl').css('transition', 'all 1s');
+                }
+
+            });
+            var count1 = 0;
+            $('#li_core').on('click', function() {
+                count1++;
+                if (count1 % 2 == 1) {
+                    $('#s2-nav').css('display', 'block');
+                } else {
+                    $('#s2-nav').css('display', 'none');
+                }
+
+            })
+        });
+    </script>
 </body>
 
 </html>
