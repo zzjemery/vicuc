@@ -50,6 +50,9 @@ body {
   .caret {
     display: none;
   }
+  body {
+    overflow: hidden;
+  }
   .dropdown-menu2 a {
     color: #000;
     text-decoration: none;
