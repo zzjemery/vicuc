@@ -63,10 +63,12 @@ body {
     visibility: visible;
   }
   .nav-su {
-    width: 60% !important;
+    width: 70% !important;
     position: relative;
-    left: -61%;
-    margin-top: 0px !important;
+    left: -70%;
+  }
+  .s-nav #s-nav {
+    margin-top: -14px !important;
   }
   .icon_q {
     display: inline-block;
@@ -84,6 +86,7 @@ body {
     width: 80%;
   }
   #s-nav li a {
+    text-decoration: none;
     text-align: left;
     text-indent: 1em;
   }
